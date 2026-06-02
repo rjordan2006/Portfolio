@@ -72,7 +72,7 @@ for name in SECTIONS:
     parts.append(read(os.path.join(BASE, 'sections', f'{name}.html')))
 parts.append(footer)
 
-main_path = os.path.join(BASE, 'rachel-jordan-portfolio.html')
+main_path = os.path.join(BASE, 'index.html')
 with open(main_path, 'w', encoding='utf-8') as f:
     f.write('\n'.join(parts))
 print(f'Built {main_path}')
